@@ -8,10 +8,12 @@ header {
 
 .shop-name {
     border: 5px solid;
+    color: black;
     border-image: linear-gradient(to right, #ff7e5f, #feb47b) 1;
     padding: 10px;
     display: inline-block;
     margin: 0;
+
 }
 
 nav ul {
