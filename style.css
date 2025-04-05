@@ -28,3 +28,108 @@ nav ul li a {
     color: #fff;
     text-decoration: none;
 }
+main {
+    padding: 20px;
+    max-width: 1320px;
+    margin: auto;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.slider {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    margin: 20px 0;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    min-width: 100%; /* Each slide takes full width of the slider */
+    box-sizing: border-box;
+    max-height: 400px; /* Set a maximum height for the images */
+    object-fit: cover; /* Ensure images cover the area without distortion */
+}
+
+button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+
+button.prev:hover, button.next:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the thumbnails */
+    gap: 10px; /* Space between thumbnails */
+}
+
+.gallery a {
+    display: block; /* Make the anchor a block element */
+}
+
+.gallery img {
+    width: 150px; /* Set a fixed width for thumbnails */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Optional: add rounded corners */
+    transition: transform 0.2s; /* Optional: add a hover effect */
+}
+
+.gallery img:hover {
+    transform: scale(1.05); /* Optional: slightly enlarge on hover */
+}
+html, body {
+    height: 100%; /* Ensure the body takes the full height of the viewport */
+    margin: 0; /* Remove default margin */
+}
+
+body {
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+}
+
+main {
+    flex: 1; /* Allow the main content to grow and take available space */
+    padding: 20px;
+    max-width: 1320px;
+    margin: auto;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
