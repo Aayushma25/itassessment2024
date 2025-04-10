@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - Coffee Haven</title>
     <link rel="stylesheet" href="style.css">
-    
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
-        <h1 class="shop-name">COFFEE HAVEN</h1>
+        <h1 class="shop-name">Coffee Haven</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -22,21 +22,24 @@
     </header>
     <main>
         <h2>Contact Us</h2>
-        <form id="contactForm">
+        <form id="contactForm" onsubmit="return validateForm()">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
+            <span class="error" id="nameError"></span>
+
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
+            <span class="error" id="emailError"></span>
+
             <label for="message">Message:</label>
             <textarea id="message" name="message" required></textarea>
+            <span class="error" id="messageError"></span>
+
             <button type="submit">Send Message</button>
         </form>
     </main>
     <footer>
         <p>&copy; 2023 Coffee Haven | 123 Coffee Lane, Brewtown | <a href="mailto:info@coffeehaven.com">Email Us</a></p>
     </footer>
-
-
-   
 </body>
 </html>
