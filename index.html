@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coffee Haven - Home</title>
+    <title> Index page - Coffee Haven</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
     
@@ -33,6 +33,11 @@
             </div>
             <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
             <button class="next" onclick="changeSlide(1)">&#10095;</button>
+            <div class="indicators">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
         </div>
         <h2>Welcome to Coffee Haven!</h2>
         <p>Experience the best coffee in town. Freshly brewed and served with love.</p>
